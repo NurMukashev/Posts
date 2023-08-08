@@ -1,6 +1,9 @@
 <template>
     <div class="w-3/4 mx-auto pt-6">
-        <h1 class="text-lg mb-5">Create</h1>
+        <h1 class="text-lg mb-2">Create</h1>
+        <div class="mb-2">
+            <Link :href="route('posts.index')" class="text-sm text-green-700">Back</Link>
+        </div>
         <form @submit.prevent="store">
             <div class="mb-4">
                 <input v-model="name" type="text" placeholder="title" class="w-full border-green-700">
