@@ -9,8 +9,7 @@
                 <div>id: {{ post.id }}</div>
                 <div>name: {{ post.name }}</div>
                 <div>text: {{ post.text }}</div>
-                <div>created_at: {{ post.created_at }}</div>
-                <div>updated_at: {{ post.updated_at }}</div>
+                <div class="text-sm text-right">{{ post.date }}</div>
             </div>
         </div>
     </div>
