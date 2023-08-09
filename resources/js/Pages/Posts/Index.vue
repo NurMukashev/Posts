@@ -10,6 +10,9 @@
                 <div>name: {{ post.name }}</div>
                 <div>text: {{ post.text }}</div>
                 <div class="text-sm text-right">{{ post.date }}</div>
+                <div class="text-sm text-right">
+                    <Link class="text-green-700" :href="route('posts.show', post.id)">Show</Link>
+                </div>
             </div>
         </div>
     </div>
